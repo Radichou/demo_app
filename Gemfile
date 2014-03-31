@@ -8,8 +8,18 @@ source 'http://rubygems.org'
 #gem 'sqlite3'
 
 gem 'rails', '3.0.5'
-gem 'sqlite3-ruby', '1.3.2', :group => :development
+#gem 'sqlite3-ruby', '1.3.2', :group => :development
+
+group :development do
+   gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
+
 gem 'pg'
+
 # gem 'rake', '0.9.0'
 # Use unicorn as the web server
 # gem 'unicorn'
