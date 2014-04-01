@@ -6,9 +6,4 @@ require 'rake'
 require 'rdoc/task'
 RDoc::Task.new do |rdoc|
 
-DemoApp::Application.load_tasks
-
-
-
-
-
+#DemoApp::Application.load_tasks
